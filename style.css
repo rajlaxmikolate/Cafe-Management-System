@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.welcome-heading-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-head{
+    height: 30vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.welcome-heading-image{
+    width: 20vh;
+    height:20vh;
+    border-radius: 50px;
+    margin: 2vh;
+}
+.welcome-heading-title{
+    font-size: 50px;
+    margin: 3vh;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.welcome-heading-sections{
+    margin: 2vw;
+}
+.welcome-container{
+    background-image:
+     url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1447&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-container-card{
+    height: 50vh;
+    width: 50vw;
+    border-style: bold;
+    background-color: #ffffff;
+    border-radius: 20px;
+
+}
+.welcome-container-card-content{
+    text-align: center;
+    margin: 2vh;
+    padding: 2vh;
+    padding-bottom: 0%;
+}
+.welcome-container-card-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-container-card-button{
+    margin:20px;
+}    
+.welcome-container-card-note{
+    margin: 2vw;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+}
+.welcome-heading-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-head{
+    height: 30vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.welcome-heading-image{
+    width: 20vh;
+    height:20vh;
+    border-radius: 50px;
+    margin: 2vh;
+}
+.welcome-heading-title{
+    font-size: 50px;
+    margin: 3vh;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.welcome-heading-sections{
+    margin: 2vw;
+}
+
+
+.menu-container-text{
+    margin-left: 5vh;
+}
+.menu-container{
+    background-color: #ffffff;
+}
+.menu-container-card{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 15vw;
+    margin: 3vw;
+    margin-top: 2vh;
+    box-shadow: 5px 5px 5px;
+}
+.menu-container-card-image{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.menu-card-text{
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-input-row{
+    margin: 30px;
+    margin-bottom: 0;
+}
+.login-input-text{
+    font-size: 20px;
+}
+.login-input-box{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.login-input-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.conditions-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conditions-card-para{
+    text-align: center;
+    margin: 20px;
+}
+.contact-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="section-main">
+        <div class="welcome-head">
+            <div class="d-flex flex-row welcome-heading-center">
+                <div>
+                    <img src="https://i.pinimg.com/564x/33/df/f5/33dff590f24493ce9e3574fecf18d521.jpg" class="welcome-heading-image">
+                </div>
+                <div>
+                    <div>
+                        <h1 class="welcome-heading-title">Cafe Management System</h1>
+                    </div>
+                    <div>
+                        <ul class="d-flex flex-row welcome-heading-center">
+                            <li class="welcome-heading-sections" onclick="display('section-menu')">Menu</li>
+                            <li class="welcome-heading-sections" onclick="display('section-login')">Login</li>
+                            <li class="welcome-heading-sections"  onclick="display('section-conditions')">Terms And Conditions</li>
+                            <li class="welcome-heading-sections" onclick="display('section-contact')">Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/564x/55/f8/af/55f8afd0d4c2224653f1ba467b6543e8.jpg" class="welcome-heading-image">
+                </div>
+            </div>
+        </div>
+        <div class="welcome-container">
+            <div class="welcome-container-card">
+                <div>
+                    <h1 class="welcome-container-card-content">!!Welcome!!</h1>
+                    <p class="welcome-container-card-content">Delivering great food for more than 18 years!</p>
+                </div>
+                <div class="d-flex flex-row welcome-container-card-button-container">
+                    <div>
+                        <button class="btn btn-primary welcome-container-card-button" onclick="display('section-menu')">Menu</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary welcome-container-card-button" onclick="display('section-book')">Book Table</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="welcome-container-card-note">
+                        <p>Note:- It Could Take Upto 30min for Delivery. Coupens Will Only For Home Deliverys</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-menu">
+        <div class="d-flex flex-row welcome-heading-center">
+            <div>
+                <img src="https://i.pinimg.com/564x/33/df/f5/33dff590f24493ce9e3574fecf18d521.jpg" class="welcome-heading-image">
+            </div>
+            <div>
+                <div>
+                    <h1 class="welcome-heading-title">Cafe Management System</h1>
+                </div>
+                <div>
+                    <ul class="d-flex flex-row welcome-heading-center">
+                        <li class="welcome-heading-sections" onclick="display('section-main')">Home</li>
+                        <li class="welcome-heading-sections" onclick="display('section-login')">Login</li>
+                        <li class="welcome-heading-sections"  onclick="display('section-conditions')">Terms And Conditions</li>
+                        <li class="welcome-heading-sections" onclick="display('section-contact')">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/564x/55/f8/af/55f8afd0d4c2224653f1ba467b6543e8.jpg" class="welcome-heading-image">
+            </div>
+        </div>
+        <div class="menu-container">
+            <div>
+                <h1 class="menu-container-text">Main Course</h1>
+                <div class="d-flex flex-row">
+                    <div class="menu-container-card "onclick="display('section-order')" >
+                        <img src="https://i.pinimg.com/564x/c4/e6/11/c4e611dad9d151787d4a319410757ec9.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Cheese Burger</h1>
+                        <h1 class="menu-card-text">₹149</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/7d/2b/7d/7d2b7d6142d43b08fb5ba34517d3f224.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Cheese Sandwich</h1>
+                        <h1 class="menu-card-text">₹109</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/cb/94/5c/cb945c106c63a0c9e3ca2080f4052b2b.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Chiken Burger</h1>
+                        <h1 class="menu-card-text">₹199</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/73/40/8f/73408fdf48cf6af9d08b6937ff2a4eaf.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Spicy Chiken</h1>
+                        <h1 class="menu-card-text">₹210</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/02/71/52/027152be9b32d99b20fb7abdc3beffbb.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Panner Burger</h1>
+                        <h1 class="menu-card-text">₹119</h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="menu-container-text">Appetizer</h1>
+                <div class="d-flex flex-row">
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/06/ab/5a/06ab5a30b1487662512899ff02cc0aab.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">French Fries</h1>
+                        <h1 class="menu-card-text">₹59</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/d4/2f/f2/d42ff28abadf4cc37ae00f78dcdc3688.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Cheese French Fries</h1>
+                        <h1 class="menu-card-text">₹99</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/f6/b4/79/f6b47982eae057572dec5ac40bfaca64.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Ice Cream</h1>
+                        <h1 class="menu-card-text">₹49</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/80/35/60/803560020f0f772bb12862e1eb2f50c0.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Cheese Cake</h1>
+                        <h1 class="menu-card-text">₹189</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/f6/b8/d8/f6b8d85a217f6d02d8f72f0b57418cb9.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Tandoori Momos</h1>
+                        <h1 class="menu-card-text">₹100</h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="menu-container-text">Drinks</h1>
+                <div class="d-flex flex-row">
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/736x/aa/c8/e7/aac8e7495442ea137e4b6d81354d4876.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Milk Shake</h1>
+                        <h1 class="menu-card-text">₹39</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/58/05/b3/5805b36a79a9dcb6a4992485ffb43330.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Cold Coffee</h1>
+                        <h1 class="menu-card-text">₹59</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/b3/cc/65/b3cc65036266985ddfc88f3a9e4211a0.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Mojito</h1>
+                        <h1 class="menu-card-text">₹70</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/a0/42/a6/a042a63ad554e144f2abc1c3a87329b4.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Ice Tea</h1>
+                        <h1 class="menu-card-text">₹59</h1>
+                    </div>
+                    <div class="menu-container-card" onclick="display('section-order')">
+                        <img src="https://i.pinimg.com/564x/8a/64/aa/8a64aa105ce7c59d131287cc64cea19d.jpg" class="menu-container-card-image">
+                        <h1 class="menu-card-text">Hot Chocalate</h1>
+                        <h1 class="menu-card-text">₹179</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-login">
+        <div class="welcome-head">
+            <div class="d-flex flex-row welcome-heading-center">
+                <div>
+                    <img src="https://i.pinimg.com/564x/33/df/f5/33dff590f24493ce9e3574fecf18d521.jpg" class="welcome-heading-image">
+                </div>
+                <div>
+                    <div>
+                        <h1 class="welcome-heading-title">Cafe Management System</h1>
+                    </div>
+                    <div>
+                        <ul class="d-flex flex-row welcome-heading-center">
+                            <li class="welcome-heading-sections" onclick="display('section-main')">Home</li>
+                            <li class="welcome-heading-sections" onclick="display('section-menu')">Menu</li>
+                            <li class="welcome-heading-sections"  onclick="display('section-conditions')">Terms And Conditions</li>
+                            <li class="welcome-heading-sections" onclick="display('section-contact')">Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/564x/55/f8/af/55f8afd0d4c2224653f1ba467b6543e8.jpg" class="welcome-heading-image">
+                </div>
+            </div>
+        </div>
+        <div class="welcome-container">
+            <div class="welcome-container-card">
+                <div>
+                    <h1 class="welcome-container-card-content">Login Page</h1>
+                </div>
+                <div class="d-flex flex-row login-input">
+                    <div class="login-input-row">
+                        <h1 class="login-input-text">Name</h1>
+                        <input type="text" class="login-input-box">
+                        <h1 class="login-input-text">Number</h1>
+                        <input type="number" class="login-input-box">
+                    </div>
+                    <div class="login-input-row">
+                        <h1 class="login-input-text">E-mail</E-mail></h1>
+                        <input type="text" class="login-input-box">
+                        <h1 class="login-input-text">Passoward</h1>
+                        <input type="text" class="login-input-box">
+                    </div>
+                </div>
+                <div class="login-input-button">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-conditions">
+        <div class="welcome-head">
+            <div class="d-flex flex-row welcome-heading-center">
+                <div>
+                    <img src="https://i.pinimg.com/564x/33/df/f5/33dff590f24493ce9e3574fecf18d521.jpg" class="welcome-heading-image">
+                </div>
+                <div>
+                    <div>
+                        <h1 class="welcome-heading-title">Cafe Management System</h1>
+                    </div>
+                    <div>
+                        <ul class="d-flex flex-row welcome-heading-center">
+                            <li class="welcome-heading-sections" onclick="display('section-main')">Home</li>
+                            <li class="welcome-heading-sections" onclick="display('section-menu')">Menu</li>
+                            <li class="welcome-heading-sections" onclick="display('section-login')">Login</li>
+                            <li class="welcome-heading-sections" onclick="display('section-contact')">Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/564x/55/f8/af/55f8afd0d4c2224653f1ba467b6543e8.jpg" class="welcome-heading-image">
+                </div>
+            </div>
+        </div>
+        <div class="welcome-container">
+            <div class="welcome-container-card">
+                <div class="conditions-card">
+                    <div>
+                        <h1 class="welcome-container-card-content">Terms And conditions</h1>
+                        <p class="conditions-card-para">Welcome to our digital information network. These are our terms and conditions for use of the network, which you may access in several ways, including but not limited to the World Wide Web via theguardian.com, digital television, PDA, mobile phone and RSS feeds. In these terms and conditions, when we say the "Guardian Site" we mean the digital information network operated by or on behalf of Guardian News & Media Limited or its parent companies, subsidiaries and affiliates (collectively "Guardian"), regardless of how you access the network, as well as any Guardian apps whether you access those via a Guardian Site or a third party site. However you access the Guardian Site, you agree to be bound by these terms and conditions. If you have accessed the Guardian Site from the United States or Australia, you also agree to be bound by additional terms contained at the end of these terms and conditions.  
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="section-contact">
+        <div class="welcome-head">
+            <div class="d-flex flex-row welcome-heading-center">
+                <div>
+                    <img src="https://i.pinimg.com/564x/33/df/f5/33dff590f24493ce9e3574fecf18d521.jpg" class="welcome-heading-image">
+                </div>
+                <div>
+                    <div>
+                        <h1 class="welcome-heading-title">Cafe Management System</h1>
+                    </div>
+                    <div>
+                        <ul class="d-flex flex-row welcome-heading-center">
+                            <li class="welcome-heading-sections" onclick="display('section-main')">Home</li>
+                            <li class="welcome-heading-sections" onclick="display('section-menu')">Menu</li>
+                            <li class="welcome-heading-sections" onclick="display('section-login')">Login</li>
+                            <li class="welcome-heading-sections" onclick="display('section-conditions')">Terms And Conditions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/564x/55/f8/af/55f8afd0d4c2224653f1ba467b6543e8.jpg" class="welcome-heading-image">
+                </div>
+            </div>
+        </div>
+        <div class="welcome-container">
+            <div class="welcome-container-card">
+                <div>
+                    <h1 class="welcome-container-card-content">Contact Us</h1>
+                </div>
+                <div class="contact-card">
+                    <div>
+                        <div>
+                            <h1 class="login-input-text">Name</h1>
+                            <input type="text" class="login-input-box">
+                        </div>
+                        <div>
+                            <h1 class="login-input-text">Email</h1>
+                            <input type="text" class="login-input-box">
+                        </div>
+                        <div>
+                            <h1 class="login-input-text">Message</h1>
+                            <input type="text" class="login-input-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="login-input-button">
+                    <button class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-book">
+        <div class="welcome-head">
+            <div class="d-flex flex-row welcome-heading-center">
+                <div>
+                    <img src="https://i.pinimg.com/564x/33/df/f5/33dff590f24493ce9e3574fecf18d521.jpg" class="welcome-heading-image">
+                </div>
+                <div>
+                    <div>
+                        <h1 class="welcome-heading-title">Cafe Management System</h1>
+                    </div>
+                    <div>
+                        <ul class="d-flex flex-row welcome-heading-center">
+                            <li class="welcome-heading-sections" onclick="display('section-main')">Home</li>
+                            <li class="welcome-heading-sections" onclick="display('section-menu')">Menu</li>
+                            <li class="welcome-heading-sections" onclick="display('section-conditions')">Terms And Conditions</li>
+                            <li class="welcome-heading-sections" onclick="display('section-contact')">Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/564x/55/f8/af/55f8afd0d4c2224653f1ba467b6543e8.jpg" class="welcome-heading-image">
+                </div>
+            </div>
+        </div>
+        <div class="welcome-container">
+            <div class="welcome-container-card">
+                <div>
+                    <h1 class="welcome-container-card-content">Book Table</h1>
+                </div>
+                <div class="d-flex flex-row login-input">
+                    <div class="login-input-row">
+                        <h1 class="login-input-text">Name</h1>
+                        <input type="text" class="login-input-box">
+                        <h1 class="login-input-text">Contact Number</h1>
+                        <input type="number" class="login-input-box">
+                    </div>
+                    <div class="login-input-row">
+                        <h1 class="login-input-text">Table For</h1>
+                        <input type="number" class="login-input-box">
+                        <h1 class="login-input-text">Time</h1>
+                        <input type="time" class="login-input-box">
+                    </div>
+                </div>
+                <div class="login-input-button">
+                    <button class="btn btn-primary">Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-order">
+        <div class="welcome-head">
+            <div class="d-flex flex-row welcome-heading-center">
+                <div>
+                    <img src="https://i.pinimg.com/564x/33/df/f5/33dff590f24493ce9e3574fecf18d521.jpg" class="welcome-heading-image">
+                </div>
+                <div>
+                    <div>
+                        <h1 class="welcome-heading-title">Cafe Management System</h1>
+                    </div>
+                    <div>
+                        <ul class="d-flex flex-row welcome-heading-center">
+                            <li class="welcome-heading-sections" onclick="display('section-main')">Main</li>
+                            <li class="welcome-heading-sections" onclick="display('section-menu')">Menu</li>
+                            <li class="welcome-heading-sections" onclick="display('section-conditions')">Terms And Conditions</li>
+                            <li class="welcome-heading-sections" onclick="display('section-contact')">Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/564x/55/f8/af/55f8afd0d4c2224653f1ba467b6543e8.jpg" class="welcome-heading-image">
+                </div>
+            </div>
+        </div>
+        <div class="welcome-container">
+            <div class="welcome-container-card">
+                <div>
+                    <h1 class="welcome-container-card-content">Order Summary</h1>
+                </div>
+                <div class="d-flex flex-row login-input">
+                    <div class="login-input-row">
+                        <h1 class="login-input-text">Name</h1>
+                        <input type="text" class="login-input-box">
+                        <h1 class="login-input-text">Number</h1>
+                        <input type="number" class="login-input-box">
+                    </div>
+                    <div class="login-input-row">
+                        <h1 class="login-input-text">Adress</E-mail></h1>
+                        <input type="text" class="login-input-box">
+                        <h1 class="login-input-text">Method Of Payment</h1>
+                        <input type="search" class="login-input-box">
+                    </div>
+                </div>
+                <div class="login-input-button">
+                    <button class="btn btn-primary">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+</html>
